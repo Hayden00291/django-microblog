@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>MicroBlog</title>
+</head>
+
+<body>
+
+    <h1>MicroBlog</h1>
+    <div>
+        <!--ここにデータが入る-->
+        {% for blog in object_list %}
+        <div>
+            {{ blog.content }}<br>
+            {{ blog.posted_date }}
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+
+</html>
